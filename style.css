@@ -2,7 +2,6 @@ header{
     height: 100px;
 }
 nav{
-    min-width: 100px;
     height:calc(100vh - 100px);
     background-image: url(img/sidebar-bg.png);
     background-color:#051E34;
@@ -15,12 +14,42 @@ section{
     width: 90%;
     margin: 0 10px;
 }
+header i  {
+    color:#FF8F00;
+}
+#search-bar input:focus{
+    box-shadow: none;
+    border-color: transparent;
+    background-color:#e5e5e5d0 ;
+}
+#search-bar a{
+    cursor: pointer;
+}
+nav i{
+ transform: scale(2);
+ display: inline-block;
+ padding: 17px 30px;
+}
 /* Utilitis */
 .blue{
     background-color:#1B72E8;
     height: 200px;
-    min-width: 100vw;
+}
+.my-img{
+    max-width: 70px;
 }
 table img{
     width: 30px;
+}
+.black{
+    color:#000
+}
+.light-gray{
+    background-color: #E5E5E5;
+}
+/* MetaQuery */
+@media screen and (min-width:992px){
+    nav{
+        min-width: 160px;
+    }
 }
