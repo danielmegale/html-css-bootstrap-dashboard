@@ -31,8 +31,7 @@ header i  {
 nav i{
  transform: scale(2);
  display: inline-block;
- padding: 0px 30px;
- margin-top: 17px;
+ padding-right: 20px;
 }
 nav a {
     text-decoration: none;
@@ -49,6 +48,10 @@ table i {
 }
 table img {
     padding-right: 5px;
+}
+.my-bg-white{
+    padding: 7px 30px;
+    height:50px;
 }
 /* Utilitis */
 .blue{
@@ -69,6 +72,15 @@ table img{
 .rounded-pill{
     background-color:#165BBA ;
 }
+/* Hover */
+nav .my-bg-white:hover{
+    background-color:#ffffff70; 
+    height: 50px;
+}
+table i:hover{
+    background-color:#6C757D;
+    color: white;
+}
 /* MetaQuery */
 @media screen and (min-width:992px){
     nav{
@@ -76,5 +88,8 @@ table img{
     }
     .offcanvas.offcanvas-end{
         width: 40%;
+    }
+    table .name{
+        width: 50%;
     }
 }

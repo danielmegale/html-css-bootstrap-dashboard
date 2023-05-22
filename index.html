@@ -52,27 +52,27 @@
         <nav class="text-white text-center text-lg-start">
             <div class="d-flex flex-column justify-content-between h-100">
                 <div class="col">
-                    <div class="pt-3">
+                    <div class="mt-3 my-bg-white">
                         <a class="text-white" href="">
                             <i class="bi bi-house-fill"></i>
                             <span class="d-none d-lg-inline-block fw-bolder">Home</span>
                         </a>
                     </div>
-                    <div>
-                        <a class="text-white"  href="">
+                    <div class="mt-3 my-bg-white">
+                        <a class="text-white" href="">
                             <i class="bi bi-reception-3"></i>
                             <span class="d-none d-lg-inline-block fw-bolder">Stats</span>
                         </a>
                     </div>
-                    <div class="">
+                    <div class="mt-3 my-bg-white">
                         <a class="text-white"  href="">
                             <i class="bi bi-bar-chart-fill"></i>
                             <span class="d-none d-lg-inline-block fw-bolder">Signal</span>
                         </a>
                     </div>
                 </div>
-                <div class="col-12">
-                    <div class="pb-5">
+                <div class="col-12 mt-3 my-bg-white">
+                    <div class="">
                         <a class="text-white"  href="">
                             <i class="bi bi-gear-fill"></i>
                             <span class="d-none d-lg-inline-block fw-bolder">Admin</span>
@@ -93,11 +93,81 @@
                         </button>
                         <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                             <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Inserisci un nuovo studente</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
-                            <div class="offcanvas-body">
-                              <p>Try scrolling the rest of the page to see this option in action.</p>
+                            <div class="offcanvas-body text-start">
+                              <form class="row g-3">
+                                <div class="col-md-6">
+                                  <label for="inputname" class="form-label">Nome</label>
+                                  <input type="text" class="form-control" id="inputname">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputsurname" class="form-label">Cognome</label>
+                                  <input type="text" class="form-control" id="inputsurname">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputEmail4" class="form-label">Email</label>
+                                  <div class="input-group flex-nowrap">
+                                    <span class="input-group-text" id="addon-wrapping">@</span>
+                                    <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping" id="inputEmail4">
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputPassword4" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputEmail4" class="form-label">Email</label>
+                                  <div class="input-group flex-nowrap">
+                                    <span class="input-group-text" id="addon-wrapping">@</span>
+                                    <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping" id="inputEmail4">
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputPassword4" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputAddress" class="form-label">Indirizzo</label>
+                                  <input type="text" class="form-control" id="inputAddress">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputAddress2" class="form-label">Indirizzo 2</label>
+                                  <input type="text" class="form-control" id="inputAddress2">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputCity" class="form-label">Città</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="inputState" class="form-label">Stato</label>
+                                  <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-2">
+                                  <label for="inputZip" class="form-label">CAP</label>
+                                  <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="input-group mb-3">
+                                  <input type="file" class="form-control" id="inputGroupFile02">
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                      Check me out
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <button type="submit" class="btn btn-primary">Salva</button>
+                                  <button type="submit" class="btn btn-warning">Svuota  </button>
+                                </div>
+                                
+                              </form>
                             </div>
                         </div>
                     </div> 
@@ -135,10 +205,10 @@
                         <div class="card mb-4">
                             <h5 class="card-header">Prossime classi</h5>
                             <div class="container-fluid">  
-                                <table class="table">
+                                <table class="table table-hover">
                                     <thead>
                                       <tr>
-                                        <th scope="col">Nome</th>
+                                        <th class="name" scope="col">Nome</th>
                                         <th scope="col"><span class="d-none d-md-inline-block">Data Inizio</span></th>
                                         <th scope="col"><span class="d-none d-md-inline-block">ROI</span></th>
                                         <th class="text-center" scope="col">Stato</th>
@@ -151,56 +221,58 @@
                                         <td><span class="d-none d-md-inline-block">15 Feb 2021 </span></td>
                                         <td><span class="d-none d-md-inline-block">20%</span></td>
                                         <td class="text-center"><span class="badge text-bg-success">Done</span></td>
-                                        <td class="text-center"><i class="bi bi-pencil-fill"></i><i class="bi bi-trash-fill"></i></td>
+                                        <td class="text-center"><a href=""><i class="bi bi-pencil-fill"></i></a><a href=""><i class="bi bi-trash-fill"></i></a></td>
                                       </tr>
                                       <tr>
                                         <th scope="row"><img class="" src="img/class-avatar.jpg" alt="">Classe 76</th>
                                         <td><span class="d-none d-md-inline-block">16 Feb 2021</span></td>
                                         <td><span class="d-none d-md-inline-block">20%</span></td>
                                         <td class="text-center"><span class="badge text-bg-success">Done</span></td>
-                                        <td class="text-center"><i class="bi bi-pencil-fill"></i><i class="bi bi-trash-fill"></i></td>
+                                        <td class="text-center"><a href=""><i class="bi bi-pencil-fill"></i></a><a href=""><i class="bi bi-trash-fill"></i></a></td>
                                       </tr>
                                       <tr>
                                         <th scope="row"><img class="" src="img/class-avatar.jpg" alt="">Classe 77</th>
                                         <td><span class="d-none d-md-inline-block">17 Feb 2021</span></td>
                                         <td><span class="d-none d-md-inline-block">20%</span></td>
                                         <td class="text-center"><span class="badge text-bg-warning">Process</span></td>
-                                        <td class="text-center"><i class="bi bi-pencil-fill"></i><i class="bi bi-trash-fill"></i></td>
+                                        <td class="text-center"><a href=""><i class="bi bi-pencil-fill"></i></a><a href=""><i class="bi bi-trash-fill"></i></a></td>
+
+                                        </button>
                                       </tr>
                                       <tr>
                                         <th scope="row"><img class="" src="img/class-avatar.jpg" alt="">Classe 78</th>
                                         <td><span class="d-none d-md-inline-block">18 Feb 2021</span></td>
                                         <td><span class="d-none d-md-inline-block">20%</span></td>
                                         <td class="text-center"><span class="badge text-bg-success">Done</span></td>
-                                        <td class="text-center"><i class="bi bi-pencil-fill"></i><i class="bi bi-trash-fill"></i></td>
+                                        <td class="text-center"><a href=""><i class="bi bi-pencil-fill"></i></a><a href=""><i class="bi bi-trash-fill"></i></a></td>
                                       </tr>
                                       <tr>
                                         <th scope="row"><img class="" src="img/class-avatar.jpg" alt="">Classe 79</th>
                                         <td><span class="d-none d-md-inline-block">19 Feb 2021</span></td>
                                         <td><span class="d-none d-md-inline-block">20%</span></td>
                                         <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
-                                        <td class="text-center"><i class="bi bi-pencil-fill"></i><i class="bi bi-trash-fill"></i></td>
+                                        <td class="text-center"><a href=""><i class="bi bi-pencil-fill"></i></a><a href=""><i class="bi bi-trash-fill"></i></a></td>
                                       </tr>
                                       <tr>
                                         <th scope="row"><img class="" src="img/class-avatar.jpg" alt="">Classe 80</th>
                                         <td><span class="d-none d-md-inline-block">20 Feb 2021</span></td>
                                         <td><span class="d-none d-md-inline-block">20%</span></td>
                                         <td class="text-center"><span class="badge text-bg-success">Done</span></td>
-                                        <td class="text-center"><i class="bi bi-pencil-fill"></i><i class="bi bi-trash-fill"></i></td>
+                                        <td class="text-center"><a href=""><i class="bi bi-pencil-fill"></i></a><a href=""><i class="bi bi-trash-fill"></i></a></td>
                                       </tr>
                                       <tr>
                                         <th scope="row"><img class="" src="img/class-avatar.jpg" alt="">Classe 81</th>
                                         <td><span class="d-none d-md-inline-block">21 Feb 2021</span></td>
                                         <td><span class="d-none d-md-inline-block">20%</span></td>
                                         <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
-                                        <td class="text-center"><i class="bi bi-pencil-fill"></i><i class="bi bi-trash-fill"></i></td>
+                                        <td class="text-center"><a href=""><i class="bi bi-pencil-fill"></i></a><a href=""><i class="bi bi-trash-fill"></i></a></td>
                                       </tr>
                                       <tr>
                                         <th scope="row"><img class="" src="img/class-avatar.jpg" alt="">Classe 75</th>
                                         <td><span class="d-none d-md-inline-block">22 Feb 2021</span></td>
                                         <td><span class="d-none d-md-inline-block">20%</span></td>
                                         <td class="text-center"><span class="badge text-bg-success">Done</span></td>
-                                        <td class="text-center"><i class="bi bi-pencil-fill"></i><i class="bi bi-trash-fill"></i></td>
+                                        <td class="text-center"><a href=""><i class="bi bi-pencil-fill"></i></a><a href=""><i class="bi bi-trash-fill"></i></a></td>
                                       </tr>
                                       
                                     </tbody>
